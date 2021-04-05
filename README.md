@@ -24,7 +24,19 @@ PowerLimitValue.txtの場所を指定
 ```
 PowerLimitValuePath = "C:/xxx/xxx/aaaa/PowerLimitValue.txt"
 ```
-nvidiaInspectorコマンド発行
+nvidiaInspectorコマンド発行  
+各パラメータを設定。省略するとオーバークロック値がクリアされる（CoreClock、MemoryClockが0設定となる）  
+setBaseClockOffset=コアクロック(例では-200)  
+setMemoryClockOffset=メモリクロック(例では990)  
+setTempTarget=温度上限(例では65)  
 ```
 subprocess.call([nvidiaInspectorPath, "-setBaseClockOffset:0,0,-200", "-setMemoryClockOffset:0,0,990" ,"-setPowerTarget:0,%d" % (chengePower), "-setTempTarget:0,0,65"])
 ```
+
+
+savePowerLimitValue.py
+PowerLimitValue.txtの場所を指定
+```
+file = open('C:/xxx/xxx/aaaa/PowerLimitValue.txt', 'w')
+```
+
