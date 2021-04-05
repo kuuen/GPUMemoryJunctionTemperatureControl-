@@ -13,12 +13,12 @@ def is_integer(n):
 # 引数取得
 args = sys.argv
 
-powerLimit = 10
+powerLimit = 31
 
 # 引数をうまく取得できない場合
 if len(args) != 2 or is_integer(args[1]) == False :
-  # 無条件で10にする
-  powerLimit = 10
+  # 無条件で31にする
+  powerLimit = 31
 else :
   powerLimit = args[1]
 

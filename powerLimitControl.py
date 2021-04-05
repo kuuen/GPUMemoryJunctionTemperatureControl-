@@ -46,8 +46,8 @@ try:
     power = 30
 
 except FileNotFoundError:
-  # 取得できない場合30固定
-  power = 30
+  # 取得できない場合31固定
+  power = 31
 
 chengePower = power
 # 温度が限界を超えている場合
