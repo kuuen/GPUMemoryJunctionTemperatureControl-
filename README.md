@@ -66,4 +66,4 @@ Arguments
 C:\Users\ユーザ名\Desktop\test\savePowerLimitValue.py %v
 ```
 
-※行こうにするには各Enable Alertingを無効にする
+※無効にするには各Enable Alertingを無効にする
