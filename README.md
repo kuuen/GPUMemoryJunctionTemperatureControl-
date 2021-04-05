@@ -11,11 +11,20 @@ Windows10,  [HWiNFO64](https://www.hwinfo.com/),[nvidiaInspector](https://www.nv
 ## インストール
 ### pythonファイルの編集
 powerLimitControl.py
-10行目　nvidiaInspectorのインストール場所を指定
+
+MemoryJunctionTemperatureの上限値を設定
+```
+TMP_LIMIT = 95
+```
+nvidiaInspectorのインストール場所を指定
 ```
 nvidiaInspectorPath = "C:/xxx/xxx/xxxx/Nvidia_Inspector/nvidiaInspector.exe"
 ```
-12行目 PowerLimitValue.txtの場所を指定
+PowerLimitValue.txtの場所を指定
 ```
 PowerLimitValuePath = "C:/xxx/xxx/aaaa/PowerLimitValue.txt"
+```
+nvidiaInspectorコマンド発行
+```
+subprocess.call([nvidiaInspectorPath, "-setBaseClockOffset:0,0,-200", "-setMemoryClockOffset:0,0,990" ,"-setPowerTarget:0,%d" % (chengePower), "-setTempTarget:0,0,65"])
 ```
