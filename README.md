@@ -43,7 +43,7 @@ file = open('C:/xxx/xxx/aaaa/PowerLimitValue.txt', 'w')
 対象のGPUの「GPU Memory Junction Temperature」Alert Settingsを設定  
 Enable Alerting を有効  
 if value >= の内容を設定 30くらいにする  
-Run a Programを有効 pythonw.exeを設定、Arguments:はpowerLimitControl.py、%vを指定
+Run a Programを有効 pythonw.exeを設定、Arguments:はpowerLimitControl.py、%vを指定  
 例　Program
 ```
 C:\Users\ユーザ名\AppData\Local\Programs\Python\Python39\pythonw.exe
@@ -56,7 +56,7 @@ C:\Users\ユーザ名\Desktop\test\powerLimitControl.py %v
 対象のGPUの「ToTal GPU Power「% of TDP」Alert Settingsを設定  
 Enable Alerting を有効  
 if value >= の内容を設定 10くらいにする  
-Run a Programを有効 pythonw.exeを設定、Arguments:savePowerLimitValue.py、%vを指定
+Run a Programを有効 pythonw.exeを設定、Arguments:savePowerLimitValue.py、%vを指定  
 例　Program
 ```
 C:\Users\ユーザ名\AppData\Local\Programs\Python\Python39\pythonw.exe
