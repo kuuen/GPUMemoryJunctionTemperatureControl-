@@ -70,6 +70,6 @@ if chengePower != power:
   #setFanSpeed=ファンスピード(制御できず、変わらない)
   subprocess.call([nvidiaInspectorPath, "-setBaseClockOffset:0,0,-200", "-setMemoryClockOffset:0,0,990" ,"-setPowerTarget:0,%d" % (chengePower), "-setTempTarget:0,0,65"])
 
-  file = open("C:/Users/arata/Desktop/0402/PowerLimitValue.txt", "w", encoding = "utf_8")
+  file = open(PowerLimitValuePath, "w", encoding = "utf_8")
   file.writelines(str(chengePower))
 
