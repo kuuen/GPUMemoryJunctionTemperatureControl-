@@ -15,7 +15,7 @@ def shutdown(args):
 
 
 
-  file = open("C:/Users/arata/Desktop/0402/ShutdownValue.txt", "w", encoding = "utf_8")
+  file = open("C:/Users/XXX/Desktop/ShutdownValue.txt", "w", encoding = "utf_8")
   file.writelines(args[1] + "\n")
   file.writelines(args[2] + "\n")
 
