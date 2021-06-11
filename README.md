@@ -10,7 +10,7 @@ Windows10,  以下のインストール.[HWiNFO64](https://www.hwinfo.com/),[nvi
 
 ## インストール
 ### pythonファイルの編集
-powerLimitControl.py
+#### powerLimitControl.py
 
 MemoryJunctionTemperatureの上限値(℃)を設定
 ```
@@ -34,7 +34,7 @@ subprocess.call([nvidiaInspectorPath, "-setBaseClockOffset:0,0,-200", "-setMemor
 ```
 
 
-savePowerLimitValue.py
+#### savePowerLimitValue.py  
 PowerLimitValue.txtの場所を指定
 ```
 file = open('C:/xxx/xxx/aaaa/PowerLimitValue.txt', 'w')
