@@ -8,7 +8,7 @@ import shutdownOs
 TMP_LIMIT = 80
 
 # nvidiaInspector.exeがある場所を設定
-nvidiaInspectorPath = "C:/Users/arata/Desktop/0402/Nvidia_Inspector/nvidiaInspector.exe"
+nvidiaInspectorPath = "C:/Users/XXXX/Desktop/BBBBB/Nvidia_Inspector/nvidiaInspector.exe"
 
 # 引数取得
 args = sys.argv
@@ -42,7 +42,7 @@ power = 0
 
 try:
   # HWiNFO64のTotal GPU Powerで出力された内容を取得する
-  f = open('C:/Users/arata/Desktop/0402/PowerLimitValue.txt', 'r')
+  f = open('C:/Users/XXXX/Desktop/BBBB/PowerLimitValue.txt', 'r')
   power = float(f.readline().replace(' /n', ''))
 
   print(power)
@@ -87,7 +87,7 @@ if chengePower != power:
   #setFanSpeed=ファンスピード(制御できず、変わらない)
   subprocess.call([nvidiaInspectorPath, "-setBaseClockOffset:0,0,-200", "-setMemoryClockOffset:0,0,990" ,"-setPowerTarget:0,%d" % (chengePower), "-setTempTarget:0,0,65"])
 
-#  file = open("C:/Users/arata/Desktop/0402/PowerLimitValue.txt", "w", encoding = "utf_8")
+#  file = open("C:/Users/XXXX/Desktop/BBBB/PowerLimitValue.txt", "w", encoding = "utf_8")
 #  file.writelines(str(chengePower))
 ##  file.writelines('')
 
