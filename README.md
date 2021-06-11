@@ -40,7 +40,7 @@ PowerLimitValue.txtの場所を指定
 file = open('C:/xxx/xxx/aaaa/PowerLimitValue.txt', 'w')
 ```
 ### HWiNFO64の設定
-対象のGPU「GPU Memory Junction Temperature」のAlert Settingsを設定  
+#### 対象のGPU「GPU Memory Junction Temperature」のAlert Settingsを設定  
 Enable Alerting を有効  
 if value >= の内容を設定 30くらいにする  
 Run a Programを有効 pythonw.exeを設定、Arguments:はpowerLimitControl.py、%vを指定  
@@ -53,7 +53,7 @@ C:\Users\ユーザ名\AppData\Local\Programs\Python\Python39\pythonw.exe
 C:\Users\ユーザ名\Desktop\test\powerLimitControl.py %v
 ```
 
-対象のGPU「ToTal GPU Power「% of TDP」」のAlert Settingsを設定  
+#### 対象のGPU「ToTal GPU Power「% of TDP」」のAlert Settingsを設定  
 Enable Alerting を有効  
 if value >= の内容を設定 10くらいにする  
 Run a Programを有効 pythonw.exeを設定、Arguments:savePowerLimitValue.py、%vを指定  
